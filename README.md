@@ -17,11 +17,16 @@ Follow the following steps to create the sample application for this tutorial.
 2.	Create a “Procfile” and write the following code. 
  
     `$ touch Procfile` 
+    
+      ![Deploying Flask App on Heroku_page2_image1](https://user-images.githubusercontent.com/63247801/168375310-9d90e906-29bd-42a9-bcec-5f85b7afd38d.jpg)
+
 
 3.	Create “runtime.txt” 
 
     `$ touch runtime.txt`
-  
+    
+      ![Deploying Flask App on Heroku_page2_image2](https://user-images.githubusercontent.com/63247801/168375328-3eb727c8-1330-4bf2-9ba8-cc689e3dbd3f.jpg)
+
 and write the following code.
 
 4.	Create a folder named “app” and enter the folder. 
