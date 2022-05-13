@@ -1,2 +1,3 @@
-# flask_app_template_code
+# Flask App Template 
+
 A template for future flask apps
