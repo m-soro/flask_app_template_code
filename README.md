@@ -13,7 +13,7 @@
 
 5. `pipenv shell`
 
-6. `git init ; git add . ; git commit -m 'initial commit'`
+6. `rm -rf .git ; git init ; git add . ; git commit -m 'initial commit'`
 
 7. `heroku login`
 
