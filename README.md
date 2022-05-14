@@ -1,6 +1,6 @@
 # Flask App Template 
 
-### A template for future flask apps
+### My template for future flask apps
 
 ---
 1. `gh repo clone m-soro/flask_app_template_code`
