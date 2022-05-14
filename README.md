@@ -3,15 +3,17 @@
 ### A template for future flask apps
 
 ---
-1. `mv flask_app_template_code <new-name>`
+1. `gh repo clone m-soro/flask_app_template_code`
 
-2. `cd <new-name>`
+2. `mv flask_app_template_code <new-name>`
 
-3. `pipenv install flask gunicorn`
+3. `cd <new-name>`
 
-4. `pipenv shell`
+4. `pipenv install flask gunicorn`
 
-5. `git init ; git add . ; git commit -m 'initial commit'`
+5. `pipenv shell`
+
+6. `git init ; git add . ; git commit -m 'initial commit'`
 
 ---
 
