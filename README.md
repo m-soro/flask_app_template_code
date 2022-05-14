@@ -15,6 +15,12 @@
 
 6. `git init ; git add . ; git commit -m 'initial commit'`
 
+7. `heroku login`
+
+8. `heroku create <unique-app-name> `
+
+9. `git push heroku master`
+
 ---
 
 **if:** 
