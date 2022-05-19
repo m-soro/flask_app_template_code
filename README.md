@@ -39,5 +39,59 @@ remove git with:
 
 ---
 
-![0001](https://user-images.githubusercontent.com/63247801/168363699-8f37f8dc-d775-4cf6-bb1e-725129912205.jpg)
-![0002](https://user-images.githubusercontent.com/63247801/168363792-c6292fc6-35fa-4d01-b071-4f701b566853.jpg)
+## To run Selenium in Heroku 
+
+1. **Create main.py with Selenium import**.
+
+```python
+from selenium inport webdriver
+import os
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--no-sandbox')
+
+driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), chrome_options=chrome_options)
+
+site = 'https://www.google.com'
+driver.get(site) 
+
+print(driver.page_source)
+
+```
+
+2. **In heroku** 
+
+   a. **Create new app**
+   
+   b. **Settings > Add buildpack**
+	    
+   1. `python` 
+	 2. `https://github.com/heroku/heroku-buildpack-google-chrome`
+	 3. `https://github.com/heroku/heroku-buildpack-chromedriver`
+	     
+   c. **Reveal config vars**
+   
+	 1. `CHROMEDRIVER_PATH = /app/.chromedriver/bin/chromedriver`
+	 2. `GOOGLE_CHROME_BIN = /app/.apt/usr/bin/google-chrome`
+	
+3. **Create requirements.txt**    -->    `pip3 freeze > requirements.txt`
+
+4. **Create Procfile**            -->    `echo web: python main.py > Procfile`
+
+5. **Deploy to heroku**
+
+    a. `git init` 
+
+    b. `git add`
+
+    c. `git commit -m 'initial commit'`	
+
+    d. `git push heroku master`
+
+6. **Run it**                     -->    `heroku run python main.py`
+
+
+
