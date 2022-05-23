@@ -44,7 +44,7 @@ remove git with:
 1. **Create main.py with Selenium import**.
 
 ```python
-from selenium inport webdriver
+from selenium import webdriver
 import os
 
 chrome_options = webdriver.ChromeOptions()
@@ -93,5 +93,15 @@ print(driver.page_source)
 
 6. **Run it**                     -->    `heroku run python main.py`
 
+---
+
+Create Postgres Database in Heroku:
+* Get credentials
+
+```python
+psql --host=ec2-3-228-235-79.compute-1.amazonaws.com --port=5432 --username=nkftbsuouwdqkc --password --dbname=d43rfu8ko95dc9
+```
+
+* It will prompt for password, then copy and paste the password from the credentials page
 
 
