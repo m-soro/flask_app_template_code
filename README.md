@@ -98,10 +98,19 @@ print(driver.page_source)
 Create Postgres Database in Heroku:
 * Get credentials
 
+**In command line**
+
 ```python
 psql --host=ec2-3-228-235-79.compute-1.amazonaws.com --port=5432 --username=nkftbsuouwdqkc --password --dbname=d43rfu8ko95dc9
 ```
 
 * It will prompt for password, then copy and paste the password from the credentials page
+
+test with `\dt`
+
+**Create Schema**
+in new terminal, cd to your project folder `subl projectname.sql`
+
+
 
 
